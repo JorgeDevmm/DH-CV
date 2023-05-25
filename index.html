@@ -4,44 +4,66 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Curriculum vitae</title>
   </head>
   <body>
     <header class="header">
-      <img class="header__imagen" src="img/logo-batman.svg" alt="logo imagen" />
+      <div class="header__contenido">
+        <img class="header__imagen" src="img/foto.jpg" alt="foto-perfil" />
 
-      <h1 class="header__titulo titulos titulos--spacing">
-        Curriculum Vitae de Bruce Wayne
-      </h1>
+        <h1 class="header__titulo titulos--spacing">
+          Jorge Luis Monzón Morales
+        </h1>
+        <nav class="header__links">
+          <li class="header__link"><a href="index.html">Inicio</a></li>
+          <li class="header__link"><a href="sobre-mi.html">Sobre mi</a></li>
+        </nav>
+        <div class="header__separador">
+          <div class="header__border"></div>
+        </div>
+      </div>
+      <div></div>
     </header>
 
-    <main>
+    <main class="main">
       <section class="contenido">
         <h2 class="contenido__titulo titulos">Datos Personales</h2>
         <ul class="contenido__texto">
-          <li><span>Nombre completo: </span> Bruce Wayne</li>
-          <li><span>Fecha de nacimiento: </span>01/05/1939</li>
-          <li><span>Lugar de nacimiento: </span>Gotham City</li>
+          <li><span>Nombre completo: </span>Jorge Luis Monzón Morales</li>
+          <li><span>Fecha de nacimiento: </span>29/10/1989</li>
+          <li><span>Lugar de nacimiento: </span>Púeblo Libre - Lima</li>
         </ul>
       </section>
       <section class="contenido">
         <h2 class="contenido__titulo titulos">Formación Academica</h2>
         <ul class="contenido__texto">
           <li class="lista__flex">
-            <span>1956-1961: </span>
+            <span>2023-2025: </span>
             <div class="lista__texto">
-              <p>Universidad del espantapájaros</p>
-              <p>Licenciatura en aeronaútica</p>
+              <p>Digital House</p>
+              <p>Certified Tech Developer, Ingeniería de Software</p>
             </div>
           </li>
-
           <li class="lista__flex">
-            <span>1952-1956: </span>
+            <span>2022-2023:</span>
             <div class="lista__texto">
-              <p>Secundario Gotham</p>
-              <p>Bachiller con especialización en trucos</p>
+              <p>Programa ONE – Oracle Next Education</p>
+              <p>Programación frontend & Backend</p>
+            </div>
+          </li>
+          <li class="lista__flex">
+            <span>2014-2020: </span>
+            <div class="lista__texto">
+              <p>Universidad Privada del Norte</p>
+              <p>Ingenieria de Sistemas Computacionales</p>
             </div>
           </li>
         </ul>
@@ -50,29 +72,44 @@
         <h2 class="contenido__titulo titulos">Experiencia Laboral</h2>
         <ul class="contenido__texto">
           <li class="lista__flex">
-            <span>1975-1985: </span>
+            <span>2019-2022:</span>
             <div class="lista__texto">
-              <p>Desocupado</p>
-              <p>Sin trabajo porquer se me rompió el batimovil</p>
-            </div>
-          </li>
-          <li class="lista__flex">
-            <span>1965-1975:</span>
-            <div class="lista__texto">
-              <p>Cazavillanos y demás chusma</p>
+              <p>Asistente de Bases de datos y Programación</p>
               <p>
-                Atrapé a Gatubela a joker a Victor Fries lo dejé porque se me
-                congeló la capa
+                Administración, soporte y Monitoreo del comportamiento de la BD
+                MySQL de Producción y Desarrollo, aplicando SQL
+              </p>
+              <p>
+                Elaboración de reporte, automatizaciones, validaciones y Cierres
+                de Producción en el sistema.
+              </p>
+              <p>
+                Diseño y Optimización de los script de los procesos en la
+                plataforma SIG aplicando lenguajes de programación PHP y
+                javascript
+              </p>
+              <p>
+                Elaboración, preparación, cruces y validaciones de Dashboard en
+                Power Bi, Excel y macros de Access para los reportes y
+                presentación del sistema para gerencia y el banco.
               </p>
             </div>
           </li>
           <li class="lista__flex">
-            <span>1962-1965:</span>
+            <span>2018-2019:</span>
             <div class="lista__texto">
-              <p>Aprendiz de superhéroes</p>
+              <p>Practicante pre profesional de sistemas</p>
               <p>
-                Hice pasantía con Superman. Opté por usar mascara porque no pude
-                aprender a peinarme el rulo
+                Soporte de las plataformas de producción Diseño Integrado y
+                Gestión (SIG) de la empresa.
+              </p>
+              <p>
+                Planificación y sugerencias de optimización de las consultas
+                sobre las Base de datos MySQL.
+              </p>
+              <p>
+                Asignación y carga de la base mensual para la gestión del
+                sistema.
               </p>
             </div>
           </li>
@@ -82,8 +119,15 @@
   </body>
 
   <footer class="footer">
-    <p class="footer__texto">0810 - BATMAN</p>
-    <img src="img/logo-instagram.svg" alt="loog_instagram" />
-    <img src="img/logo.linkedin.svg" alt="logo_instagram" />
+    <p class="footer__texto">0810 - Jorge Luis Monzón Morales</p>
+
+    <img src="img/logo-instagram.svg" alt="logo_instagram" />
+    <a
+      class="footer__logolinkedin"
+      target="_blank"
+      href="https://www.linkedin.com/in/jorge-luis-monzon-morales/"
+    >
+      <img src="img/logo.linkedin.svg" alt="logo_instagram"
+    /></a>
   </footer>
 </html>
