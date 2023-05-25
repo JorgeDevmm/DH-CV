@@ -249,9 +249,28 @@ span {
   margin-top: 0;
   padding-left: 2rem;
 }
+
+.sobre-mi__contenido {
+  display: flex;
+}
+
 .sobre-mi__texto {
   line-height: 1.5;
   font-size: 1.5rem;
   text-align: center;
   padding: 0 2rem;
+  border: 0.1rem solid var(--gris-claro);
+  border-radius: 2rem;
+  margin: 2rem auto;
+}
+
+@media (min-width: 768px) {
+  .sobre-mi__texto {
+    width: 50rem;
+    padding: 0 auto;
+  }
+}
+
+.sobre-mi__parrafo {
+  text-align: center;
 }
